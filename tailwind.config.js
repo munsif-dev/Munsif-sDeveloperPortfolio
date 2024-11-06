@@ -1,22 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Adjust this path if necessary
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        mont: ["var(--font-mont)"],
-        pop: ["var(--font-pop)"],
+        sans: ["Inter", "sans-serif"],
+        mont: ["Montserrat", "sans-serif"],
+        pop: ["Poppins", "sans-serif"],
         potta: ["Potta One", "cursive"],
       },
       colors: {
         dark: "#003945",
         light: "#E0FFF4",
-        primary: "#3EB5AF", // 240,86,199
-        primaryDark: "#BAE256", // 80,230,217
+        primary: "#3EB5AF",
+        primaryDark: "#BAE256",
       },
       animation: {
         "spin-slow": "spin 25s linear infinite",
